@@ -4,4 +4,4 @@ nota3 = float(input("Informe a 3ª nota: ")) #estamos convertendo valores textua
 
 media = (nota1+nota2+nota3)/3
 
-print(f"Sua média é {media:.2f}") #.2f significa que teremos 2 casas decimais após a vírgula
+print(f"Sua média é {media:.2f}") #.2f significa que teremos 2 casas decimais após a vírgula4
