@@ -14,6 +14,3 @@ while True:
     elif valor<= 0:
        print("Programa encerrado")
     break
-    
-       
-    
