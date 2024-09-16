@@ -1,5 +1,5 @@
 '''
-Este código é ums representação do que acontece na maioria das linguagens de progrmação
+Este código é uma representação do que acontece na maioria das linguagens de progrmação
 
 for(contador=1; contador <=5 ; contador++)
 '''

@@ -2,7 +2,7 @@ soma = 0 #Estamos inicializando a variavel com o valor zero
 
 total_pares = 0
 
-for contador in range(1,5):
+for contador in range(1,10):
     if contador % 2 == 0:
         soma = soma + contador # soma += contador
         total_pares = total_pares + 1
