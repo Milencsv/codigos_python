@@ -11,6 +11,6 @@ while True:
         valor = valor**2 
         print(f"O resultado é {valor}")
 
-    elif valor<= 0:
-       print("Programa encerrado")
-    break
+    elif valor< 0:
+        print("Programa encerrado")
+        break   

@@ -1,7 +1,7 @@
 print("Bem-vindo à Loja do Sr. Manoel")
 
 valorT = 0.0
-valorP = float
+valorP = 0.0
 
 while valorP != 0:
     valorP = float(input("Digite o preço do item. Para finalizar digite 0: "))
@@ -23,6 +23,5 @@ if valorT > 0:
             break
         elif dinheiro < valorT:
             print("Vai dar calote na mãe >:( ")
-            break
         else:
             print(f"Valor insuficiente! Você precisa pagar pelo menos R$ {valorT:.2f}.")
