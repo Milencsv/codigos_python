@@ -9,8 +9,10 @@ def exibir_menu():
 def exibir_eventos(eventos):
     if eventos:
         print("\nEventos agendados:")
-        for i, evento in enumerate(eventos, 1):
+        i = 1
+        for evento in eventos:
             print(f"{i}. {evento}")
+            i += 1
     else:
         print("\nNenhum evento agendado.")
 
@@ -19,13 +21,23 @@ def adicionar_evento(eventos):
     eventos.append(novo_evento)
     print(f"\nEvento '{novo_evento}' adicionado com sucesso!")
 
+def contar_eventos(eventos):
+    # Função que conta manualmente os itens da lista sem usar len()
+    contador = 0
+    for _ in eventos:
+        contador += 1
+    return contador
+
 def remover_evento(eventos):
     if not eventos:
         print("\nNão há eventos para remover.")
         return
+    
     exibir_eventos(eventos)
     posicao = int(input("\nQual a posição do evento a remover? "))
-    if 1 <= posicao <= len(eventos):
+    total_eventos = contar_eventos(eventos)
+
+    if 1 <= posicao <= total_eventos:
         evento_removido = eventos.pop(posicao - 1)
         print(f"\nEvento '{evento_removido}' removido com sucesso!")
     else:
